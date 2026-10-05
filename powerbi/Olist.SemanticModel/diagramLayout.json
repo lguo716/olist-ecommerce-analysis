@@ -1,0 +1,191 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 805.91764743972567,
+            "y": 354.97384277640822
+          },
+          "nodeIndex": "Metrics",
+          "nodeLineageTag": "1caf2106-794c-449c-8f2f-9ea549390a4b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1089.9176474397257,
+            "y": 354.97384277640822
+          },
+          "nodeIndex": "category_growth_quality",
+          "nodeLineageTag": "4461da31-4fe9-4726-a1c3-388435ee792d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1373.9176474397257,
+            "y": 354.97384277640822
+          },
+          "nodeIndex": "category_performance",
+          "nodeLineageTag": "c0ecdf59-2900-4d4a-8d6b-6a7c11710ce8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1657.9176474397257,
+            "y": 380.97384277640822
+          },
+          "nodeIndex": "cohort_retention_tidy",
+          "nodeLineageTag": "41de6304-40ae-4224-ae8c-a5795a927fe8",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 510.41813740874119
+          },
+          "nodeIndex": "Date",
+          "nodeLineageTag": "b29e4aff-2e0b-4924-aa15-fe01ec452261",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1941.9176474397257,
+            "y": 354.97384277640822
+          },
+          "nodeIndex": "monthly_metrics",
+          "nodeLineageTag": "2bbe4901-7acf-4cfc-9637-349e1ef07cdd",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 571.91764743972567,
+            "y": -50
+          },
+          "nodeIndex": "powerbi_customers",
+          "nodeLineageTag": "e694c090-fc90-4a57-b1b9-ccbe9d2f919a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 443.68552893664275,
+            "y": 659.94768555281644
+          },
+          "nodeIndex": "powerbi_order_items",
+          "nodeLineageTag": "5adf3f15-e9a8-4696-868b-755a585e324f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 338.67136163173939,
+            "y": 302.71658994827584
+          },
+          "nodeIndex": "powerbi_orders",
+          "nodeLineageTag": "43b43528-3d58-479a-afc1-44f3bc17ed99",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2225.9176474397254,
+            "y": 368.97384277640822
+          },
+          "nodeIndex": "repurchase_by_first_delivery",
+          "nodeLineageTag": "d949bfdb-adc8-45a4-b889-eb18fee8602f",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2509.9176474397254,
+            "y": 368.97384277640822
+          },
+          "nodeIndex": "repurchase_by_first_review",
+          "nodeLineageTag": "2744eaaf-089b-4a88-b8d0-fe35df4d9eaa",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2793.9176474397254,
+            "y": 354.97384277640822
+          },
+          "nodeIndex": "seller_scorecard",
+          "nodeLineageTag": "0ad0e4ff-cd7d-43b7-93bb-ea3788639490",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3077.9176474397254,
+            "y": 354.97384277640822
+          },
+          "nodeIndex": "state_performance",
+          "nodeLineageTag": "66bccfa6-70cf-4bfa-a8d4-2e6a5d9bdbb9",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "所有表",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "所有表",
+  "defaultDiagram": "所有表"
+}

@@ -1,0 +1,4 @@
+first_delivery_status,customers,repeat_90d_customers,average_first_order_value,average_first_review_score,repeat_90d_rate,reliable_sample
+On time,68950,1582,136.31013328498912,4.274863611167839,0.022944162436548222,True
+Late,6611,136,149.62701406746334,2.4413036762434355,0.020571774315534714,True
+Unknown,2,0,148.15,5.0,0.0,False

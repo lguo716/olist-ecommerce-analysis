@@ -1,0 +1,4819 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"powerbi_orders\",\"powerbi_order_items\",\"powerbi_customers\",\"monthly_metrics\",\"cohort_retention_tidy\",\"category_performance\",\"category_growth_quality\",\"seller_scorecard\",\"state_performance\",\"repurchase_by_first_delivery\",\"repurchase_by_first_review\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "zh-CN",
+    "cultures": [
+      {
+        "name": "zh-CN",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "category_growth_quality.category": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_growth_quality",
+                    "ConceptualProperty": "category"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_growth_quality.growth": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_growth_quality",
+                    "ConceptualProperty": "Growth"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Growth": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_growth_quality.growth_orders": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_growth_quality",
+                    "ConceptualProperty": "Growth Orders"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Growth Orders": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_growth_quality.score_change": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_growth_quality",
+                    "ConceptualProperty": "Score Change"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Score Change": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_performance.category": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_performance",
+                    "ConceptualProperty": "category"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_performance.category_freight_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_performance",
+                    "ConceptualProperty": "Category Freight Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "运费/成交额": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_performance.category_gmv": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_performance",
+                    "ConceptualProperty": "Category GMV"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "成交额 BRL": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_performance.category_late_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_performance",
+                    "ConceptualProperty": "Category Late Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "延迟率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_performance.category_low_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_performance",
+                    "ConceptualProperty": "Category Low Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "低评分率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_performance.category_orders": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_performance",
+                    "ConceptualProperty": "Category Orders"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "订单数": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "category_performance.category_score": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "category_performance",
+                    "ConceptualProperty": "Category Score"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "评分": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "cohort_retention_tidy.cohort_index": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "cohort_retention_tidy",
+                    "ConceptualProperty": "cohort_index"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cohort_index": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "cohort_retention_tidy.cohort_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "cohort_retention_tidy",
+                    "ConceptualProperty": "cohort_month"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "首购月": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "cohort_retention_tidy.retention": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "cohort_retention_tidy",
+                    "ConceptualProperty": "Retention"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "留存率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "date.year_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Year Month"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Year Month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.average_delivery_days": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Average Delivery Days"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "平均履约天数": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "履约天数": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.average_order_value": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Average Order Value"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "客单价 BRL": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "客单价": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.average_review_score": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Average Review Score"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "平均评分": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.column90d_repeat_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "90D Repeat Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "90天复购率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.customer_frequency_count": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Customer Frequency Count"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Customer Frequency Count": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.delivered_gmv": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Delivered GMV"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "成交额 BRL": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Delivered GMV": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "成交额": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.delivered_orders": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Delivered Orders"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "成交订单": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Delivered Orders": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "订单数": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.delivery_group_low_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Delivery Group Low Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Delivery Group Low Rate": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.delivery_group_score": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Delivery Group Score"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Delivery Group Score": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.eligible_90d_customers": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Eligible 90D Customers"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "90天可观察顾客": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.item_freight": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Item Freight"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Item Freight": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.item_volume_litres": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Item Volume Litres"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Item Volume Litres": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.item_weight_kg": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Item Weight Kg"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Item Weight Kg": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.late_delivery_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Late Delivery Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "延迟率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.lowreview_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Low-review Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "低评分率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.ontime_delivery_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "On-time Delivery Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "准时送达率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.purchasing_customers": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Purchasing Customers"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "购买顾客": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "成交顾客": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.repeat_customer_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Repeat Customer Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "窗口内复购率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "总体复购率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.rfm_customers": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "RFM Customers"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "RFM Customers": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.rfm_value": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "RFM Value"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "RFM Value": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "metrics.top_10_item_gmv": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Metrics",
+                    "ConceptualProperty": "Top 10 Item GMV"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Top 10 Item GMV": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "monthly_metrics.new_customers_monthly": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "monthly_metrics",
+                    "ConceptualProperty": "New Customers Monthly"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "新客": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "monthly_metrics.purchase_month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "monthly_metrics",
+                    "ConceptualProperty": "purchase_month"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "purchase_month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "monthly_metrics.returning_customers_monthly": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "monthly_metrics",
+                    "ConceptualProperty": "Returning Customers Monthly"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "复购顾客": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_customers.frequency": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_customers",
+                    "ConceptualProperty": "frequency"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "frequency": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_customers.segment": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_customers",
+                    "ConceptualProperty": "segment"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "segment": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_order_items.category": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_order_items",
+                    "ConceptualProperty": "category"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_order_items.product_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_order_items",
+                    "ConceptualProperty": "product_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "product_id": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_orders.customer_city": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_orders",
+                    "ConceptualProperty": "customer_city"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "城市": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_orders.customer_state": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_orders",
+                    "ConceptualProperty": "customer_state"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "州": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "customer_state": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_orders.delivery_status_label": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_orders",
+                    "ConceptualProperty": "Delivery Status Label"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Delivery Status Label": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "powerbi_orders.order_status": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "powerbi_orders",
+                    "ConceptualProperty": "order_status"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "order_status": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "repurchase_by_first_delivery.delivery_90d_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "repurchase_by_first_delivery",
+                    "ConceptualProperty": "Delivery 90D Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Delivery 90D Rate": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "repurchase_by_first_delivery.first_delivery_status": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "repurchase_by_first_delivery",
+                    "ConceptualProperty": "first_delivery_status"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "first_delivery_status": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "repurchase_by_first_review.first_review_group": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "repurchase_by_first_review",
+                    "ConceptualProperty": "first_review_group"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "first_review_group": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "repurchase_by_first_review.review_90d_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "repurchase_by_first_review",
+                    "ConceptualProperty": "Review 90D Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Review 90D Rate": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "seller_scorecard.seller_gmv": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "seller_scorecard",
+                    "ConceptualProperty": "Seller GMV"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "成交额": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Seller GMV": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "seller_scorecard.seller_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "seller_scorecard",
+                    "ConceptualProperty": "seller_id"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "商家": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "seller_id": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "seller_scorecard.seller_late_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "seller_scorecard",
+                    "ConceptualProperty": "Seller Late Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "延迟率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "seller_scorecard.seller_late_risk_band": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "seller_scorecard",
+                    "ConceptualProperty": "Seller Late Risk Band"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Seller Late Risk Band": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "seller_scorecard.seller_low_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "seller_scorecard",
+                    "ConceptualProperty": "Seller Low Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "低评分率": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "seller_scorecard.seller_orders": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "seller_scorecard",
+                    "ConceptualProperty": "Seller Orders"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "订单数": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Seller Orders": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "seller_scorecard.seller_score": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "seller_scorecard",
+                    "ConceptualProperty": "Seller Score"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "评分": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Seller Score": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "89e0b3c8-5846-37fa-cf0e-7688ec436ea5",
+        "fromColumn": "purchase_date",
+        "fromTable": "powerbi_orders",
+        "toColumn": "Date",
+        "toTable": "Date"
+      },
+      {
+        "name": "fe74b991-e143-5f19-f3b1-151893c4829d",
+        "fromColumn": "customer_unique_id",
+        "fromTable": "powerbi_orders",
+        "toColumn": "customer_unique_id",
+        "toTable": "powerbi_customers"
+      },
+      {
+        "name": "81c36c00-084e-9540-7ab2-c4b70185fe33",
+        "fromColumn": "order_id",
+        "fromTable": "powerbi_order_items",
+        "toColumn": "order_id",
+        "toTable": "powerbi_orders"
+      }
+    ],
+    "sourceQueryCulture": "zh-CN",
+    "tables": [
+      {
+        "name": "powerbi_orders",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "order_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5ab28ca5-4d8b-47a2-8842-81fc52c36dd5",
+            "sourceColumn": "order_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_unique_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "509ebfff-a64c-4a0b-9dda-6b5e98affaf6",
+            "sourceColumn": "customer_unique_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "eba0786f-5de9-4534-b1ed-5c9186b836b4",
+            "sourceColumn": "order_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_purchase_timestamp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "7ca19097-f881-4c0d-a526-9d167f57d077",
+            "sourceColumn": "order_purchase_timestamp",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "fbafebe0-4b75-4b43-98c1-ad0e49d9d456",
+            "sourceColumn": "purchase_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "81bc9a5d-580d-4f65-a8ab-cc53b855fe16",
+            "sourceColumn": "purchase_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2fa76796-81be-46dc-a027-245a1943f3ec",
+            "sourceColumn": "customer_city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_state",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "537ead97-d5ce-40cc-8e9c-5afb2e55da7c",
+            "sourceColumn": "customer_state",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_revenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "4785c82e-bdc5-455b-b13e-d2a7587b9a5c",
+            "sourceColumn": "item_revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "fd085bee-6cce-4600-a2e5-fa46f9a1d7e5",
+            "sourceColumn": "freight_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "item_count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "24e06c45-2b1f-4a4a-a2f6-10b834617c34",
+            "sourceColumn": "item_count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "unique_products",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ea65df88-985a-43b1-bfaf-5946cd331dfd",
+            "sourceColumn": "unique_products",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "seller_count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a4878b2a-572c-42c4-b636-5d0fa7c82c6e",
+            "sourceColumn": "seller_count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "payment_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "fe9d297d-376e-476e-b25c-a143f0b8a9ab",
+            "sourceColumn": "payment_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "primary_payment_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f820629d-853c-4e8b-a912-a99e7a6f06ba",
+            "sourceColumn": "primary_payment_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "max_installments",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9b0218c9-061f-40d8-8aac-b4461de6e8bb",
+            "sourceColumn": "max_installments",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "369111f6-c43b-4ffd-9ed0-d1e91756d5f5",
+            "sourceColumn": "review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "delivery_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "5e623d79-b37d-4efb-bdb4-8d9917aab7d9",
+            "sourceColumn": "delivery_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "delivery_delta_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "3211cf3a-15ea-4be4-a6de-1394e4f1ca6d",
+            "sourceColumn": "delivery_delta_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "is_late",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "50b8fcf2-919d-457e-8980-38ed743429d6",
+            "sourceColumn": "is_late",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_order_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "00aaf266-7e95-452f-8dfd-abe4d0336112",
+            "sourceColumn": "customer_order_number",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "is_repeat_order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "6a92c68e-b6f2-450b-81e2-8b09f2e21d56",
+            "sourceColumn": "is_repeat_order",
+            "summarizeBy": "none"
+          },
+          {
+            "type": "calculated",
+            "name": "Delivery Status Label",
+            "dataType": "string",
+            "expression": "SWITCH (\n    TRUE (),\n    ISBLANK ( powerbi_orders[is_late] ), \"配送信息缺失\",\n    powerbi_orders[is_late] = TRUE (), \"延迟\",\n    \"准时\"\n)"
+          }
+        ],
+        "lineageTag": "43b43528-3d58-479a-afc1-44f3bc17ed99",
+        "partitions": [
+          {
+            "name": "powerbi_orders",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\data\\processed\\powerbi_orders.csv\"),[Delimiter=\",\", Columns=22, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"order_id\", type text}, {\"customer_unique_id\", type text}, {\"order_status\", type text}, {\"order_purchase_timestamp\", type datetime}, {\"purchase_date\", type date}, {\"purchase_month\", type date}, {\"customer_city\", type text}, {\"customer_state\", type text}, {\"item_revenue\", type number}, {\"freight_value\", type number}, {\"item_count\", Int64.Type}, {\"unique_products\", Int64.Type}, {\"seller_count\", Int64.Type}, {\"payment_value\", type number}, {\"primary_payment_type\", type text}, {\"max_installments\", Int64.Type}, {\"review_score\", type number}, {\"delivery_days\", type number}, {\"delivery_delta_days\", type number}, {\"is_late\", type logical}, {\"customer_order_number\", Int64.Type}, {\"is_repeat_order\", type logical}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "powerbi_order_items",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "order_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f100c1e6-2f18-4061-ab81-df3abb9487be",
+            "sourceColumn": "order_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_item_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "880d9170-11a9-4d7a-a5f8-875df52c0735",
+            "sourceColumn": "order_item_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "product_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cbebd3fb-61f4-49d6-99c9-832515e6f783",
+            "sourceColumn": "product_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "seller_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6b89d2f0-d723-46fa-ad41-b6ec5ea978dd",
+            "sourceColumn": "seller_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "shipping_limit_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "b6cd2a17-54fb-4754-90f7-fda82ec83e1f",
+            "sourceColumn": "shipping_limit_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "f8b39852-d6d9-4963-b223-da3752040f26",
+            "sourceColumn": "price",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "07eb3d69-558f-41c1-8f98-a765c8125cfd",
+            "sourceColumn": "freight_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6728ac4d-28d6-4c82-9228-912fd6b0addc",
+            "sourceColumn": "category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "product_weight_g",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1292ed30-c6a0-4ed8-888a-03d5b337a267",
+            "sourceColumn": "product_weight_g",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "product_length_cm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "98187626-f0a1-4706-af04-40cfea4f39ca",
+            "sourceColumn": "product_length_cm",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "product_height_cm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e6d0e9d6-bc29-48ba-bbd4-6514cc473e71",
+            "sourceColumn": "product_height_cm",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "product_width_cm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7594cd30-95d1-4f9b-973c-1fa7aa46c223",
+            "sourceColumn": "product_width_cm",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "product_volume_cm3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "270d4f91-a725-43d9-b2a6-b5dc7c381001",
+            "sourceColumn": "product_volume_cm3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "seller_zip_code_prefix",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3e083730-1b59-4c15-be36-7966a13be804",
+            "sourceColumn": "seller_zip_code_prefix",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "seller_city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1cf9e52f-776c-4a6d-8d65-225344107a9d",
+            "sourceColumn": "seller_city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "seller_state",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "df584f7d-51f2-4223-8d67-b9b7462d407e",
+            "sourceColumn": "seller_state",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_unique_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bbb02464-6e85-49b1-8dbf-bf75152a0baa",
+            "sourceColumn": "customer_unique_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5302ef20-467f-4aad-adfd-4fb1f0c4207f",
+            "sourceColumn": "customer_city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customer_state",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "98e314e4-1acb-4ada-ab23-7312d1e077e7",
+            "sourceColumn": "customer_state",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_purchase_timestamp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "3d38ac0e-eb97-494e-aa1a-a7d0502cfe6a",
+            "sourceColumn": "order_purchase_timestamp",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchase_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "1fd41295-5a0e-492e-aafe-578bea1aeed5",
+            "sourceColumn": "purchase_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "187622f7-38ee-40ad-93ce-e3b9cf780112",
+            "sourceColumn": "order_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_delivered",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "7401a2e6-0354-4ee8-a5a2-4457a7b9de61",
+            "sourceColumn": "is_delivered",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "18d81bb3-3605-4307-95f1-6eb8dcc14a40",
+            "sourceColumn": "delivery_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "delivery_delta_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "d2e05d95-6186-44c1-8779-92b7da242a7c",
+            "sourceColumn": "delivery_delta_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "is_late",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "53916332-15eb-4572-a7f4-92d6c55a7e56",
+            "sourceColumn": "is_late",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "81a6a7f8-911e-465e-9124-f781bae0c749",
+            "sourceColumn": "review_score",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "5adf3f15-e9a8-4696-868b-755a585e324f",
+        "partitions": [
+          {
+            "name": "powerbi_order_items",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\data\\processed\\powerbi_order_items.csv\"),[Delimiter=\",\", Columns=27, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"order_id\", type text}, {\"order_item_id\", Int64.Type}, {\"product_id\", type text}, {\"seller_id\", type text}, {\"shipping_limit_date\", type datetime}, {\"price\", type number}, {\"freight_value\", type number}, {\"category\", type text}, {\"product_weight_g\", Int64.Type}, {\"product_length_cm\", Int64.Type}, {\"product_height_cm\", Int64.Type}, {\"product_width_cm\", Int64.Type}, {\"product_volume_cm3\", Int64.Type}, {\"seller_zip_code_prefix\", Int64.Type}, {\"seller_city\", type text}, {\"seller_state\", type text}, {\"customer_unique_id\", type text}, {\"customer_city\", type text}, {\"customer_state\", type text}, {\"order_purchase_timestamp\", type datetime}, {\"purchase_month\", type date}, {\"order_status\", type text}, {\"is_delivered\", type logical}, {\"delivery_days\", type number}, {\"delivery_delta_days\", type number}, {\"is_late\", type logical}, {\"review_score\", type number}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "powerbi_customers",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "customer_unique_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6befe987-e5a8-4df0-b09e-839f592fb843",
+            "sourceColumn": "customer_unique_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "last_purchase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "55d5a930-318b-4831-9e78-a7001a18d707",
+            "sourceColumn": "last_purchase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_purchase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "97a8d558-3d73-4c35-b6de-cb395c82a992",
+            "sourceColumn": "first_purchase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "frequency",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e62a0608-1154-44fd-a96b-48bbed1dba90",
+            "sourceColumn": "frequency",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "monetary",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "2226e202-158d-43ba-9d90-ab5266ef8fcf",
+            "sourceColumn": "monetary",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "774d223f-1365-4b38-8751-3e48734c503b",
+            "sourceColumn": "freight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "0b1f5eba-f396-4612-9dd7-7296d3d19b36",
+            "sourceColumn": "average_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "recency_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "77acc0d0-9675-445e-9011-1feb017c3fac",
+            "sourceColumn": "recency_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "r_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5066da78-754f-4e36-9700-b883fbf5d960",
+            "sourceColumn": "r_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "f_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "69961f68-9a19-4082-a31b-61094a309e8e",
+            "sourceColumn": "f_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "m_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "685a32a0-81d4-463f-b652-92f6b4874fe4",
+            "sourceColumn": "m_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "rfm_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "baffa23f-2de2-4927-ac2c-9acd43884b6e",
+            "sourceColumn": "rfm_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "segment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1a3b717d-9954-4b9d-9aee-006e134e47bd",
+            "sourceColumn": "segment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_order_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1f9d5069-7284-4975-a088-71c527e2ffd5",
+            "sourceColumn": "first_order_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_purchase_at",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "eab41424-2e78-4c4d-b032-04f1c45e3f19",
+            "sourceColumn": "first_purchase_at",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_purchase_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "25275658-a2da-4c5d-805f-2e9b9f896dcc",
+            "sourceColumn": "first_purchase_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_customer_state",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ff2ae652-e92d-4c58-82cb-da9f32e25d61",
+            "sourceColumn": "first_customer_state",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_primary_category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f6c86ec3-f24a-4991-b089-9488a74debfe",
+            "sourceColumn": "first_primary_category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_order_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "b96dd632-19ee-48cf-9762-6fb04ac0b153",
+            "sourceColumn": "first_order_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "first_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "89f6d884-e0c9-4db3-a3ad-0932fc4ca7c9",
+            "sourceColumn": "first_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "first_delivery_status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f041697a-05b3-41ab-8619-3097799bad53",
+            "sourceColumn": "first_delivery_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "observation_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d974cf74-75a6-4294-8067-0307eafe7cb8",
+            "sourceColumn": "observation_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "eligible_90d",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "30991956-d9b1-4aa7-a2f9-04dd30b4096b",
+            "sourceColumn": "eligible_90d",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "repeat_within_90d",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "f44697e0-bc28-4a1b-bfc1-9a6b7e9487d6",
+            "sourceColumn": "repeat_within_90d",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e694c090-fc90-4a57-b1b9-ccbe9d2f919a",
+        "partitions": [
+          {
+            "name": "powerbi_customers",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\data\\processed\\powerbi_customers.csv\"),[Delimiter=\",\", Columns=24, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"customer_unique_id\", type text}, {\"last_purchase\", type datetime}, {\"first_purchase\", type datetime}, {\"frequency\", Int64.Type}, {\"monetary\", type number}, {\"freight\", type number}, {\"average_review_score\", type number}, {\"recency_days\", Int64.Type}, {\"r_score\", Int64.Type}, {\"f_score\", Int64.Type}, {\"m_score\", Int64.Type}, {\"rfm_score\", Int64.Type}, {\"segment\", type text}, {\"first_order_id\", type text}, {\"first_purchase_at\", type datetime}, {\"first_purchase_month\", type date}, {\"first_customer_state\", type text}, {\"first_primary_category\", type text}, {\"first_order_value\", type number}, {\"first_review_score\", type number}, {\"first_delivery_status\", type text}, {\"observation_days\", Int64.Type}, {\"eligible_90d\", type logical}, {\"repeat_within_90d\", type logical}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "monthly_metrics",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "purchase_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "4cfd341b-a4b2-4be1-a446-3916d9ef8984",
+            "sourceColumn": "purchase_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "total_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "efbdf73a-2240-48cd-939c-11ed1b01b3aa",
+            "sourceColumn": "total_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "delivered_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e8a106f8-2d08-4ce7-b30d-52bc865da89a",
+            "sourceColumn": "delivered_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "delivered_gmv",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "d6bcfb15-136e-4fce-908b-49fb43561636",
+            "sourceColumn": "delivered_gmv",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "delivered_freight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "d3045ab8-7057-485e-9d13-9379bba64662",
+            "sourceColumn": "delivered_freight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "purchasing_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "644f355f-3384-4613-bf4a-4153964dbbb6",
+            "sourceColumn": "purchasing_customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "678e4d90-6c7f-4700-a8fa-5f85ac1b28c2",
+            "sourceColumn": "average_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_delivery_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "6b9ec8b3-8794-44a2-b3f6-75c8914686f5",
+            "sourceColumn": "average_delivery_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "new_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d1f00298-3715-4ddf-b135-9f46436ea1cf",
+            "sourceColumn": "new_customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "returning_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fbda6e0b-7016-4404-8536-29815afd96df",
+            "sourceColumn": "returning_customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "on_time_delivery_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "319358ec-6652-4ff5-9368-0685db988bf3",
+            "sourceColumn": "on_time_delivery_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_order_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "50e71103-dbf2-4377-aa42-d833148e3136",
+            "sourceColumn": "average_order_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "is_complete_core_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "a6912f28-8f89-4d18-b45b-55357663f0a3",
+            "sourceColumn": "is_complete_core_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mom_gmv_growth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "6337108d-b59d-47c2-aac5-2d916fca320b",
+            "sourceColumn": "mom_gmv_growth",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "2bbe4901-7acf-4cfc-9637-349e1ef07cdd",
+        "measures": [
+          {
+            "name": "New Customers Monthly",
+            "expression": "SUM ( monthly_metrics[new_customers] )",
+            "formatString": "#,0",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Returning Customers Monthly",
+            "expression": "SUM ( monthly_metrics[returning_customers] )",
+            "formatString": "#,0",
+            "displayFolder": "看板度量"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "monthly_metrics",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\monthly_metrics.csv\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"purchase_month\", type date}, {\"total_orders\", Int64.Type}, {\"delivered_orders\", Int64.Type}, {\"delivered_gmv\", type number}, {\"delivered_freight\", type number}, {\"purchasing_customers\", Int64.Type}, {\"average_review_score\", type number}, {\"average_delivery_days\", type number}, {\"new_customers\", Int64.Type}, {\"returning_customers\", Int64.Type}, {\"on_time_delivery_rate\", type number}, {\"average_order_value\", type number}, {\"is_complete_core_month\", type logical}, {\"mom_gmv_growth\", type number}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "cohort_retention_tidy",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "cohort_month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM",
+            "lineageTag": "86befffe-dbe7-43fa-9642-93f8452fb596",
+            "sourceColumn": "cohort_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cohort_index",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "73e43978-04bd-4f2e-91e2-6ef083dea9ae",
+            "sourceColumn": "cohort_index",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "active_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "108785e2-9f57-4cba-92ed-c9b975aa00b8",
+            "sourceColumn": "active_customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "cohort_size",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6ae1f9da-8a71-415f-9037-0787f6826cdd",
+            "sourceColumn": "cohort_size",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "retention_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "d75fcae4-ce3b-421a-b3aa-9df47ef97b4f",
+            "sourceColumn": "retention_rate",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "41de6304-40ae-4224-ae8c-a5795a927fe8",
+        "measures": [
+          {
+            "name": "Retention",
+            "expression": "DIVIDE ( SUM ( cohort_retention_tidy[active_customers] ), SUM ( cohort_retention_tidy[cohort_size] ) )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Retention Cell Color",
+            "expression": "VAR Rate = [Retention]\nRETURN SWITCH ( TRUE (), ISBLANK ( Rate ), BLANK (), SELECTEDVALUE ( cohort_retention_tidy[cohort_index] ) = 0, \"#DBEAFE\", Rate = 0, \"#F8FAFC\", Rate < 0.003, \"#DBEAFE\", Rate < 0.005, \"#93C5FD\", \"#3B82F6\" )",
+            "formatString": "",
+            "displayFolder": "看板度量"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "cohort_retention_tidy",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\cohort_retention_tidy.csv\"),[Delimiter=\",\", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"cohort_month\", type date}, {\"cohort_index\", Int64.Type}, {\"active_customers\", Int64.Type}, {\"cohort_size\", Int64.Type}, {\"retention_rate\", type number}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "category_performance",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "989569e4-b310-45de-895f-77d127105543",
+            "sourceColumn": "category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "revenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "d39ffdd9-67af-4f66-a058-6fa49cffee3e",
+            "sourceColumn": "revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "79cdf014-a7a9-4311-baef-04db6e20d545",
+            "sourceColumn": "freight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1b70bf02-1a3d-454a-9996-197d3320638e",
+            "sourceColumn": "orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e8c1713b-decc-41ac-be8d-d7858acfa7c6",
+            "sourceColumn": "customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "items",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cc5b21aa-2dd7-46b0-8096-057a3eb521b8",
+            "sourceColumn": "items",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "reviewed_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "186974d1-e38f-4ed9-91ea-ccacab2d3215",
+            "sourceColumn": "reviewed_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_review_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8de6c54d-68b3-44d0-96ad-04477ad666cf",
+            "sourceColumn": "low_review_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "9ac0b41d-c974-40d6-a910-d9ea4b58ebef",
+            "sourceColumn": "average_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_review_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "6a37a063-5c49-4a40-b57c-e96b9f4c3830",
+            "sourceColumn": "low_review_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "late_delivery_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "53ae2530-7eed-4473-aa11-2eab41b0dd8d",
+            "sourceColumn": "late_delivery_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_item_price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "e8f6ffec-f879-4b88-baf4-53069439a001",
+            "sourceColumn": "average_item_price",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight_to_revenue_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "30a48bcb-2d9e-4177-9e9a-cfc6fa694b26",
+            "sourceColumn": "freight_to_revenue_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "portfolio_quadrant",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "933984a2-901d-439e-9240-452d7379c545",
+            "sourceColumn": "portfolio_quadrant",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "reliable_sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "4e8fc9f6-1986-4ac3-aa68-2668a0c9c6d1",
+            "sourceColumn": "reliable_sample",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "c0ecdf59-2900-4d4a-8d6b-6a7c11710ce8",
+        "measures": [
+          {
+            "name": "Category Orders",
+            "expression": "SUM ( category_performance[orders] )",
+            "formatString": "#,0",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Category GMV",
+            "expression": "SUM ( category_performance[revenue] )",
+            "formatString": "#,0.00",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Category Score",
+            "expression": "AVERAGE ( category_performance[average_review_score] )",
+            "formatString": "0.00",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Category Low Rate",
+            "expression": "AVERAGE ( category_performance[low_review_rate] )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Category Late Rate",
+            "expression": "AVERAGE ( category_performance[late_delivery_rate] )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Category Freight Rate",
+            "expression": "AVERAGE ( category_performance[freight_to_revenue_rate] )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "category_performance",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\category_performance.csv\"),[Delimiter=\",\", Columns=15, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"category\", type text}, {\"revenue\", type number}, {\"freight\", type number}, {\"orders\", Int64.Type}, {\"customers\", Int64.Type}, {\"items\", Int64.Type}, {\"reviewed_orders\", Int64.Type}, {\"low_review_orders\", Int64.Type}, {\"average_review_score\", type number}, {\"low_review_rate\", type number}, {\"late_delivery_rate\", type number}, {\"average_item_price\", type number}, {\"freight_to_revenue_rate\", type number}, {\"portfolio_quadrant\", type text}, {\"reliable_sample\", type logical}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "category_growth_quality",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "80c23570-5f9a-4e06-9851-6d5377969ad4",
+            "sourceColumn": "category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "revenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "706213dd-1ceb-4be6-98e6-68cb13bf8259",
+            "sourceColumn": "revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5e751302-5989-48a8-a310-0ea9f02c086d",
+            "sourceColumn": "orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "portfolio_quadrant",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e86daa67-8818-4b5f-a0e7-b04e68989ae8",
+            "sourceColumn": "portfolio_quadrant",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "revenue_2017_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "841806a6-f0c1-4367-acae-04c98eef16a7",
+            "sourceColumn": "revenue_2017_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "revenue_2018_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "5a0d2db7-7d47-4df1-9105-9d053caae05b",
+            "sourceColumn": "revenue_2018_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "orders_2017_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "80af5cac-7675-4dcc-b91c-74f96495ebee",
+            "sourceColumn": "orders_2017_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "orders_2018_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8d7f5fdf-47bc-4c24-bb33-262a6a07cf90",
+            "sourceColumn": "orders_2018_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_review_score_2017_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "35a987e4-4cbc-4c03-bdb0-be3e30d46712",
+            "sourceColumn": "average_review_score_2017_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_review_score_2018_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "f8afd925-c46a-4b9b-bd34-492b5e2c765a",
+            "sourceColumn": "average_review_score_2018_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "late_delivery_rate_2017_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "b1377db9-9d27-4adc-b96f-beccf40bd1d1",
+            "sourceColumn": "late_delivery_rate_2017_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "late_delivery_rate_2018_jan_aug",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "480ae8c8-a72b-4e1d-aaed-61fb2a0b16e5",
+            "sourceColumn": "late_delivery_rate_2018_jan_aug",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "revenue_growth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "840ef5cc-9030-454e-bb8c-423d9d9d9c4d",
+            "sourceColumn": "revenue_growth",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "review_score_change",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "829511e1-a779-4928-8ed0-7a6be1a271d3",
+            "sourceColumn": "review_score_change",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "late_rate_change",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "73fc32ea-1018-49cb-a07e-11b693120853",
+            "sourceColumn": "late_rate_change",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "comparable_sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "5241afe1-00c3-476f-aa1e-8a923dcff169",
+            "sourceColumn": "comparable_sample",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "growth_quality_risk",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "a0b19b19-43ea-4481-8aab-d28d9254aabf",
+            "sourceColumn": "growth_quality_risk",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4461da31-4fe9-4726-a1c3-388435ee792d",
+        "measures": [
+          {
+            "name": "Growth",
+            "expression": "MAX ( category_growth_quality[revenue_growth] )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Score Change",
+            "expression": "MAX ( category_growth_quality[review_score_change] )",
+            "formatString": "0.00",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Growth Orders",
+            "expression": "MAX ( category_growth_quality[orders] )",
+            "formatString": "#,0",
+            "displayFolder": "看板度量"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "category_growth_quality",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\category_growth_quality.csv\"),[Delimiter=\",\", Columns=17, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"category\", type text}, {\"revenue\", type number}, {\"orders\", Int64.Type}, {\"portfolio_quadrant\", type text}, {\"revenue_2017_jan_aug\", type number}, {\"revenue_2018_jan_aug\", type number}, {\"orders_2017_jan_aug\", Int64.Type}, {\"orders_2018_jan_aug\", Int64.Type}, {\"average_review_score_2017_jan_aug\", type number}, {\"average_review_score_2018_jan_aug\", type number}, {\"late_delivery_rate_2017_jan_aug\", type number}, {\"late_delivery_rate_2018_jan_aug\", type number}, {\"revenue_growth\", type number}, {\"review_score_change\", type number}, {\"late_rate_change\", type number}, {\"comparable_sample\", type logical}, {\"growth_quality_risk\", type logical}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "seller_scorecard",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "seller_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f9c915fe-cfc8-4315-b9f1-3f9d281cc8d1",
+            "sourceColumn": "seller_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "seller_state",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ecbe99ad-b381-4124-b3c7-f34e75ee2a0f",
+            "sourceColumn": "seller_state",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f25da179-136e-4c15-a870-f6fca9afa5c4",
+            "sourceColumn": "orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "revenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "7c9a603a-12ad-48d7-a37a-946316af3189",
+            "sourceColumn": "revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "6e66fbc2-619a-434d-9329-223e8d47593d",
+            "sourceColumn": "freight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "items",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a43dc9ff-6458-4c87-86ce-9f06f2ccb131",
+            "sourceColumn": "items",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "reviewed_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "046627a8-8482-4dce-96eb-0903339f750f",
+            "sourceColumn": "reviewed_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_review_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2557a48e-9cf9-4cea-a86c-1644a87f7999",
+            "sourceColumn": "low_review_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "2f41d316-71c9-4d99-83c5-1bd3f8200c11",
+            "sourceColumn": "average_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_review_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "ff834425-9e58-4c66-97b7-9338201125a4",
+            "sourceColumn": "low_review_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "late_delivery_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "5f2448b5-d941-4a6e-a116-40b4cfa40727",
+            "sourceColumn": "late_delivery_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_delivery_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "69c038ba-cc20-4d90-ac81-10b88e2f0098",
+            "sourceColumn": "average_delivery_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "reliable_sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "d8432f8d-d4ad-4ec9-84e6-35ec270b053b",
+            "sourceColumn": "reliable_sample",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "freight_to_revenue_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "b0278b6a-5745-436d-bb9e-31663f489eaa",
+            "sourceColumn": "freight_to_revenue_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "type": "calculated",
+            "name": "Seller Late Risk Band",
+            "dataType": "string",
+            "expression": "SWITCH (\n    TRUE (),\n    seller_scorecard[late_delivery_rate] >= 0.15, \"高延迟（≥15%）\",\n    seller_scorecard[late_delivery_rate] >= 0.08, \"中延迟（8%–15%）\",\n    \"低延迟（<8%）\"\n)"
+          }
+        ],
+        "lineageTag": "0ad0e4ff-cd7d-43b7-93bb-ea3788639490",
+        "measures": [
+          {
+            "name": "Seller GMV",
+            "expression": "SUM ( seller_scorecard[revenue] )",
+            "formatString": "#,0.00",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Seller Orders",
+            "expression": "SUM ( seller_scorecard[orders] )",
+            "formatString": "#,0",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Seller Score",
+            "expression": "AVERAGE ( seller_scorecard[average_review_score] )",
+            "formatString": "0.00",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Seller Low Rate",
+            "expression": "AVERAGE ( seller_scorecard[low_review_rate] )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          },
+          {
+            "name": "Seller Late Rate",
+            "expression": "AVERAGE ( seller_scorecard[late_delivery_rate] )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "seller_scorecard",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\seller_scorecard.csv\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"seller_id\", type text}, {\"seller_state\", type text}, {\"orders\", Int64.Type}, {\"revenue\", type number}, {\"freight\", type number}, {\"items\", Int64.Type}, {\"reviewed_orders\", Int64.Type}, {\"low_review_orders\", Int64.Type}, {\"average_review_score\", type number}, {\"low_review_rate\", type number}, {\"late_delivery_rate\", type number}, {\"average_delivery_days\", type number}, {\"reliable_sample\", type logical}, {\"freight_to_revenue_rate\", type number}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "state_performance",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "customer_state",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cbe24f6b-f1ef-412e-a247-0ce3c9b78c55",
+            "sourceColumn": "customer_state",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3bd402f6-e7cd-4694-accc-cafe7f5d6615",
+            "sourceColumn": "orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dda869e7-091c-4f63-bb4d-fe6dddf22019",
+            "sourceColumn": "customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "revenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "31a9b0a1-9798-427e-a818-e169b4804389",
+            "sourceColumn": "revenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "1b92c7c8-f425-4988-9fd8-fe87448f19c0",
+            "sourceColumn": "freight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "reviewed_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ce7354c2-facf-4191-80b2-b14c65f40ded",
+            "sourceColumn": "reviewed_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_review_orders",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a59bff17-c671-4b3c-851b-cef800de743c",
+            "sourceColumn": "low_review_orders",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "05eea76f-4bb6-4e70-9ada-3817dcd1417c",
+            "sourceColumn": "average_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "low_review_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "27a8a910-0542-4a5a-9cbb-840af92761d9",
+            "sourceColumn": "low_review_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "late_delivery_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "38bb4acc-3179-4696-95d4-93bb4d117ddc",
+            "sourceColumn": "late_delivery_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_delivery_days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "a4a4094b-d281-4fcc-8580-ace020a61dc9",
+            "sourceColumn": "average_delivery_days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_order_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "2524f2ae-e88f-4cc9-8c23-cf7727a65d16",
+            "sourceColumn": "average_order_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "freight_to_revenue_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "a1f504b1-24e1-4943-96fd-d37af215ea17",
+            "sourceColumn": "freight_to_revenue_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "reliable_sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "2b1c542f-563c-463a-bdcd-2224bab7f7ab",
+            "sourceColumn": "reliable_sample",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "66bccfa6-70cf-4bfa-a8d4-2e6a5d9bdbb9",
+        "partitions": [
+          {
+            "name": "state_performance",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\state_performance.csv\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"customer_state\", type text}, {\"orders\", Int64.Type}, {\"customers\", Int64.Type}, {\"revenue\", type number}, {\"freight\", type number}, {\"reviewed_orders\", Int64.Type}, {\"low_review_orders\", Int64.Type}, {\"average_review_score\", type number}, {\"low_review_rate\", type number}, {\"late_delivery_rate\", type number}, {\"average_delivery_days\", type number}, {\"average_order_value\", type number}, {\"freight_to_revenue_rate\", type number}, {\"reliable_sample\", type logical}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "repurchase_by_first_delivery",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "first_delivery_status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c52076c1-bce9-4eee-97ac-bbde866b0237",
+            "sourceColumn": "first_delivery_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b2448c41-cd80-430f-ba2a-62d44bf93191",
+            "sourceColumn": "customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "repeat_90d_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fcf8d4a2-0d37-4424-bc01-ad47bca1965e",
+            "sourceColumn": "repeat_90d_customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_first_order_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "0818c2e4-6d0a-4ecd-921a-19d7adc6a3a4",
+            "sourceColumn": "average_first_order_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_first_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "ceda8d60-46df-4ada-a827-ea539e1a0c56",
+            "sourceColumn": "average_first_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "repeat_90d_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "3cd4c80b-27ff-4135-91ed-44e01c072c51",
+            "sourceColumn": "repeat_90d_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "reliable_sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "4aaf6858-42a1-4dee-9db1-c022653a0f29",
+            "sourceColumn": "reliable_sample",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d949bfdb-adc8-45a4-b889-eb18fee8602f",
+        "measures": [
+          {
+            "name": "Delivery 90D Rate",
+            "expression": "DIVIDE ( SUM ( repurchase_by_first_delivery[repeat_90d_customers] ), SUM ( repurchase_by_first_delivery[customers] ) )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "repurchase_by_first_delivery",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\repurchase_by_first_delivery.csv\"),[Delimiter=\",\", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"first_delivery_status\", type text}, {\"customers\", Int64.Type}, {\"repeat_90d_customers\", Int64.Type}, {\"average_first_order_value\", type number}, {\"average_first_review_score\", type number}, {\"repeat_90d_rate\", type number}, {\"reliable_sample\", type logical}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "repurchase_by_first_review",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "导航"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "first_review_group",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "043f6e94-2748-4ce3-86ac-85f7ae16daf1",
+            "sourceColumn": "first_review_group",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1844ff7f-de24-47e6-8841-2c89b4ec1188",
+            "sourceColumn": "customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "repeat_90d_customers",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "da9d8af0-455a-439c-b69a-e5a6a84cb326",
+            "sourceColumn": "repeat_90d_customers",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_first_order_value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "4e740720-efae-4021-bdd4-a9567c666ea5",
+            "sourceColumn": "average_first_order_value",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "average_first_review_score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "e572301d-8c58-4796-b5f8-63523ec83484",
+            "sourceColumn": "average_first_review_score",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "repeat_90d_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0.00%",
+            "lineageTag": "b27cd966-10dc-4164-a985-40041350365b",
+            "sourceColumn": "repeat_90d_rate",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "reliable_sample",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "616fcc6e-4113-48e9-bf82-a4bfbfe95cc4",
+            "sourceColumn": "reliable_sample",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "2744eaaf-089b-4a88-b8d0-fe35df4d9eaa",
+        "measures": [
+          {
+            "name": "Review 90D Rate",
+            "expression": "DIVIDE ( SUM ( repurchase_by_first_review[repeat_90d_customers] ), SUM ( repurchase_by_first_review[customers] ) )",
+            "formatString": "0.00%",
+            "displayFolder": "看板度量"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "repurchase_by_first_review",
+            "mode": "import",
+            "source": {
+              "expression": "let\n    源 = Csv.Document(File.Contents(\"D:\\resume\\projects\\olist-ecommerce-analysis\\reports\\tables\\repurchase_by_first_review.csv\"),[Delimiter=\",\", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    提升的标题 = Table.PromoteHeaders(源, [PromoteAllScalars=true]),\n    更改的类型 = Table.TransformColumnTypes(提升的标题,{{\"first_review_group\", type text}, {\"customers\", Int64.Type}, {\"repeat_90d_customers\", Int64.Type}, {\"average_first_order_value\", type number}, {\"average_first_review_score\", type number}, {\"repeat_90d_rate\", type number}, {\"reliable_sample\", type logical}})\nin\n    更改的类型",
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "14cf5fbf125e47a0aea7b89fad742060"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "isDataTypeInferred": true,
+            "isKey": true,
+            "isNameInferred": true,
+            "lineageTag": "c444c11c-8561-48c6-8fd3-3ed552e972f1",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "4d928fd9-1155-4bd2-a1c6-893c3770751b",
+            "sourceColumn": "[Year]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month Number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "aacfb3b6-aab8-44e5-812c-e59fda9a2e98",
+            "sourceColumn": "[Month Number]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "44c54350-2a43-4290-8c2c-4e9da62a0eed",
+            "sortByColumn": "Month Number",
+            "sourceColumn": "[Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "d057c23f-e25c-43f7-bdff-bd4da4cb1af8",
+            "sortByColumn": "Year Month Sort",
+            "sourceColumn": "[Year Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year Month Sort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "129ae947-42e2-4f93-9469-2da544185fd7",
+            "sourceColumn": "[Year Month Sort]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "fbbbebea-370c-4ad4-9ddb-04cc458b2104",
+            "sourceColumn": "[Quarter]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Is Complete Core Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "ac540c0b-02bb-4aef-881c-2b3bd44186bd",
+            "sourceColumn": "[Is Complete Core Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "b29e4aff-2e0b-4924-aa15-fe01ec452261",
+        "partitions": [
+          {
+            "name": "Date",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "",
+                "VAR MinDate = MIN ( powerbi_orders[purchase_date] )",
+                "VAR MaxDate = MAX ( powerbi_orders[purchase_date] )",
+                "RETURN",
+                "ADDCOLUMNS (",
+                "    CALENDAR ( MinDate, MaxDate ),",
+                "    \"Year\", YEAR ( [Date] ),",
+                "    \"Month Number\", MONTH ( [Date] ),",
+                "    \"Month\", FORMAT ( [Date], \"MMM\" ),",
+                "    \"Year Month\", FORMAT ( [Date], \"YYYY-MM\" ),",
+                "    \"Year Month Sort\", YEAR ( [Date] ) * 100 + MONTH ( [Date] ),",
+                "    \"Quarter\", \"Q\" & FORMAT ( [Date], \"Q\" ),",
+                "    \"Is Complete Core Month\",",
+                "        [Date] >= DATE ( 2017, 1, 1 )",
+                "            && [Date] < DATE ( 2018, 9, 1 )",
+                ")"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Metrics",
+        "columns": [
+          {
+            "name": "Placeholder",
+            "dataType": "string",
+            "type": "calculatedTableColumn",
+            "isHidden": true,
+            "sourceColumn": "[Placeholder]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Metrics",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "DATATABLE ( \"Placeholder\", STRING, { { \"\" } } )"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Orders",
+            "expression": "DISTINCTCOUNT ( powerbi_orders[order_id] )",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Delivered Orders",
+            "expression": "CALCULATE (\n    DISTINCTCOUNT ( powerbi_orders[order_id] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" )\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Delivered GMV",
+            "expression": "CALCULATE (\n    SUM ( powerbi_orders[item_revenue] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" )\n)",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Delivered Freight",
+            "expression": "CALCULATE (\n    SUM ( powerbi_orders[freight_value] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" )\n)",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Average Order Value",
+            "expression": "DIVIDE ( [Delivered GMV], [Delivered Orders] )",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Purchasing Customers",
+            "expression": "CALCULATE (\n    DISTINCTCOUNT ( powerbi_orders[customer_unique_id] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" )\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Repeat Customers",
+            "expression": "VAR CustomerOrders =\n    ADDCOLUMNS (\n        VALUES ( powerbi_orders[customer_unique_id] ),\n        \"@DeliveredOrders\",\n            CALCULATE (\n                DISTINCTCOUNT ( powerbi_orders[order_id] ),\n                KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" )\n            )\n    )\nRETURN\nCOUNTROWS (\n    FILTER ( CustomerOrders, [@DeliveredOrders] >= 2 )\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Repeat Customer Rate",
+            "expression": "DIVIDE ( [Repeat Customers], [Purchasing Customers] )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Cancellation Rate",
+            "expression": "DIVIDE (\n    CALCULATE (\n        DISTINCTCOUNT ( powerbi_orders[order_id] ),\n        powerbi_orders[order_status] = \"canceled\"\n    ),\n    [Total Orders]\n)",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "On-time Delivered Orders",
+            "expression": "CALCULATE (\n    DISTINCTCOUNT ( powerbi_orders[order_id] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" ),\n    NOT ISBLANK ( powerbi_orders[is_late] ),\n    powerbi_orders[is_late] = FALSE ()\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Known Delivery Orders",
+            "expression": "CALCULATE (\n    DISTINCTCOUNT ( powerbi_orders[order_id] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" ),\n    NOT ISBLANK ( powerbi_orders[is_late] )\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "On-time Delivery Rate",
+            "expression": "DIVIDE ( [On-time Delivered Orders], [Known Delivery Orders] )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Late Delivered Orders",
+            "expression": "CALCULATE (\n    DISTINCTCOUNT ( powerbi_orders[order_id] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" ),\n    powerbi_orders[is_late] = TRUE ()\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Late Delivery Rate",
+            "expression": "DIVIDE ( [Late Delivered Orders], [Known Delivery Orders] )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Average Delivery Days",
+            "expression": "CALCULATE (\n    AVERAGE ( powerbi_orders[delivery_days] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" )\n)",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Average Review Score",
+            "expression": "CALCULATE (\n    AVERAGE ( powerbi_orders[review_score] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" )\n)",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Low-review Orders",
+            "expression": "CALCULATE (\n    DISTINCTCOUNT ( powerbi_orders[order_id] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" ),\n    NOT ISBLANK ( powerbi_orders[review_score] ),\n    powerbi_orders[review_score] <= 2\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Rated Delivered Orders",
+            "expression": "CALCULATE (\n    DISTINCTCOUNT ( powerbi_orders[order_id] ),\n    KEEPFILTERS ( powerbi_orders[order_status] = \"delivered\" ),\n    NOT ISBLANK ( powerbi_orders[review_score] )\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Low-review Rate",
+            "expression": "DIVIDE ( [Low-review Orders], [Rated Delivered Orders] )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "GMV MoM %",
+            "expression": "VAR MonthStart = DATE ( YEAR ( MAX ( 'Date'[Date] ) ), MONTH ( MAX ( 'Date'[Date] ) ), 1 )\nVAR PreviousMonthGMV = CALCULATE ( [Delivered GMV], DATEADD ( 'Date'[Date], -1, MONTH ) )\nRETURN\n    IF (\n        HASONEVALUE ( 'Date'[Year Month] )\n            && MonthStart >= DATE ( 2017, 2, 1 )\n            && MonthStart <= DATE ( 2018, 8, 1 ),\n        DIVIDE ( [Delivered GMV] - PreviousMonthGMV, PreviousMonthGMV )\n    )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Eligible 90D Customers",
+            "expression": "CALCULATE (\n    COUNTROWS ( powerbi_customers ),\n    powerbi_customers[eligible_90d] = TRUE ()\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "90D Repeat Customers",
+            "expression": "CALCULATE (\n    COUNTROWS ( powerbi_customers ),\n    powerbi_customers[eligible_90d] = TRUE (),\n    powerbi_customers[repeat_within_90d] = TRUE ()\n)",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "90D Repeat Rate",
+            "expression": "DIVIDE ( [90D Repeat Customers], [Eligible 90D Customers] )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Item GMV",
+            "expression": "CALCULATE (\n    SUM ( powerbi_order_items[price] ),\n    KEEPFILTERS ( powerbi_order_items[order_status] = \"delivered\" )\n)",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Freight to GMV Rate",
+            "expression": "DIVIDE ( [Delivered Freight], [Delivered GMV] )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "RFM Customer Value",
+            "expression": "SUM ( powerbi_customers[monetary] )",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Top 10 Item GMV",
+            "expression": "IF ( RANKX ( ALLSELECTED ( powerbi_order_items[category] ), [Item GMV], , DESC, DENSE ) <= 10, [Item GMV] )",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "RFM Customers",
+            "expression": "COUNTROWS ( powerbi_customers )",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "RFM Value",
+            "expression": "SUM ( powerbi_customers[monetary] )",
+            "formatString": "#,0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Customer Frequency Count",
+            "expression": "COUNTROWS ( powerbi_customers )",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Item Weight Kg",
+            "expression": "AVERAGE ( powerbi_order_items[product_weight_g] ) / 1000",
+            "formatString": "0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Item Volume Litres",
+            "expression": "AVERAGE ( powerbi_order_items[product_volume_cm3] ) / 1000",
+            "formatString": "0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Item Freight",
+            "expression": "AVERAGE ( powerbi_order_items[freight_value] )",
+            "formatString": "0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Delivery Group Orders",
+            "expression": "CALCULATE ( [Delivered Orders], NOT ISBLANK ( powerbi_orders[is_late] ), NOT ISBLANK ( powerbi_orders[review_score] ) )",
+            "formatString": "#,0",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Delivery Group Score",
+            "expression": "CALCULATE ( [Average Review Score], NOT ISBLANK ( powerbi_orders[is_late] ) )",
+            "formatString": "0.00",
+            "displayFolder": "经营分析"
+          },
+          {
+            "name": "Delivery Group Low Rate",
+            "expression": "CALCULATE ( [Low-review Rate], NOT ISBLANK ( powerbi_orders[is_late] ) )",
+            "formatString": "0.00%",
+            "displayFolder": "经营分析"
+          }
+        ]
+      }
+    ],
+    "valueFilterBehavior": "independent"
+  }
+}

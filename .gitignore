@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.matplotlib/
+
+# Raw source data is downloaded separately and should not be committed.
+data/raw/*.csv
+!data/raw/.gitkeep
+
+# Row-level derived data is regenerated locally.
+data/processed/*.csv
+data/processed/*.parquet
+reports/tables/repurchase_customer_base.csv
+
+# Keep the final dashboard, screenshots and compact result tables in GitHub.
+powerbi/*.pbix
+!powerbi/olist_ecommerce_analysis.pbix
+reports/resume_bullets.md
+
+# Local credentials and runtime outputs never belong in the repository.
+.env
+.env.*
+*.log
+
+# Desktop-local caches, recoverable intermediate backups and review captures.
+powerbi/**/.pbi/
+powerbi/backups/
+reports/figures/powerbi_review/

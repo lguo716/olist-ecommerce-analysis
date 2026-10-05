@@ -1,0 +1,58 @@
+{
+  "name": "Olist Portfolio",
+  "dataColors": [
+    "#2563EB",
+    "#F97316",
+    "#16A34A",
+    "#DC2626",
+    "#7C3AED",
+    "#0891B2",
+    "#CA8A04",
+    "#64748B"
+  ],
+  "background": "#F8FAFC",
+  "foreground": "#0F172A",
+  "tableAccent": "#2563EB",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontFamily": "Microsoft YaHei",
+            "fontSize": 12,
+            "color": { "solid": { "color": "#0F172A" } }
+          }
+        ],
+        "background": [
+          {
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#F8FAFC" } },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  },
+  "textClasses": {
+    "title": {
+      "fontFace": "Microsoft YaHei",
+      "fontSize": 13,
+      "color": "#0F172A"
+    },
+    "label": {
+      "fontFace": "Microsoft YaHei",
+      "fontSize": 10,
+      "color": "#334155"
+    }
+  }
+}
+

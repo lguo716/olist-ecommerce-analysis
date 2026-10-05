@@ -1,0 +1,4 @@
+analysis,estimate,ci_95_low,ci_95_high,statistic,p_value
+Late minus on-time mean review score,-1.7277863340342652,-1.7656776527827003,-1.68989501528583,,
+Mann-Whitney U: late vs on-time review score,,,,150680825.5,0.0
+Spearman: delivery delta days vs review score,-0.17566941207881423,,,-0.17566941207881423,0.0

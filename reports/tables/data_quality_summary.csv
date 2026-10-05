@@ -1,0 +1,10 @@
+table,file,rows,columns,size_mb,sha256,schema_check,duplicate_rows,duplicate_business_keys,missing_cells,missing_cell_rate
+customers,olist_customers_dataset.csv,99441,5,8.17,c26c17f59f3027a6a0dbeb8f1fa373c38f3323ecc84f225a8f4820e5bb288df8,PASS,0.0,0.0,0.0,0.0
+geolocation,olist_geolocation_dataset.csv,1000163,5,58.44,b514f6fc991b9566aeba02aa5d67e2c3630f034b60a0e05aa0d082a3b66d88d6,PASS,,,,
+items,olist_order_items_dataset.csv,112650,7,14.31,4f6abdbbc94036d0df4a76fa0520c072e31a40119d70f7f370fba1e2285d2bcb,PASS,0.0,0.0,0.0,0.0
+payments,olist_order_payments_dataset.csv,103886,5,5.39,61674868ed7b872aac3dcd95bf774448a88f6426b183f21be55f75af021ffdec,PASS,0.0,0.0,0.0,0.0
+reviews,olist_order_reviews_dataset.csv,99224,7,13.78,012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7,PASS,0.0,0.0,145903.0,0.21006294560071873
+orders,olist_orders_dataset.csv,99441,8,16.84,8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf,PASS,0.0,0.0,4908.0,0.00616948743476031
+products,olist_products_dataset.csv,32951,9,2.27,3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc,PASS,0.0,0.0,2448.0,0.008254681193287003
+sellers,olist_sellers_dataset.csv,3095,4,0.16,31eb9bd50d684526a78f2389413ce61841e97692de7b828fe7d956b534586312,PASS,0.0,0.0,0.0,0.0
+translation,product_category_name_translation.csv,71,2,0.0,a81f0d1f27b27e7293f761bc79e3ce8f348ee39c4b3ed3e49bde38f478586278,PASS,0.0,0.0,0.0,0.0

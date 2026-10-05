@@ -1,0 +1,25 @@
+Date =
+VAR MinDate = MIN ( powerbi_orders[purchase_date] )
+VAR MaxDate = MAX ( powerbi_orders[purchase_date] )
+RETURN
+ADDCOLUMNS (
+    CALENDAR ( MinDate, MaxDate ),
+    "Year", YEAR ( [Date] ),
+    "Month Number", MONTH ( [Date] ),
+    "Month", FORMAT ( [Date], "MMM" ),
+    "Year Month", FORMAT ( [Date], "YYYY-MM" ),
+    "Year Month Sort", YEAR ( [Date] ) * 100 + MONTH ( [Date] ),
+    "Quarter", "Q" & FORMAT ( [Date], "Q" ),
+    "Is Complete Core Month",
+        [Date] >= DATE ( 2017, 1, 1 )
+            && [Date] < DATE ( 2018, 9, 1 )
+)
+
+// After creating the table:
+// 1. Mark it as the model's date table using Date[Date].
+// 2. Sort Date[Year Month] by Date[Year Month Sort].
+// 3. Create a one-to-many relationship:
+//    Date[Date] -> powerbi_orders[purchase_date].
+// 4. Use Date[Is Complete Core Month] = TRUE only as the monthly trend
+//    visual's filter. Leave the default date slicer clear so KPI cards show
+//    the full-data acceptance baselines.

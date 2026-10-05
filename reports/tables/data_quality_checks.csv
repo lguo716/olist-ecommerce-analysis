@@ -1,0 +1,18 @@
+check_name,status,failed_rows,severity,description,recommended_action
+orders_without_customer,PASS,0,ERROR,订单无法关联顾客主表。,检查 customer_id 来源，不直接删除订单。
+items_without_order,PASS,0,ERROR,商品明细无法关联订单。,核对订单抽取范围与明细抽取范围。
+items_without_product,PASS,0,WARN,商品明细无法关联商品主表。,保留交易金额，将商品类别标记为 unknown。
+items_without_seller,PASS,0,WARN,商品明细无法关联商家主表。,保留订单，商家维度分析单独标记未知。
+payments_without_order,PASS,0,ERROR,支付记录无法关联订单。,核对支付与订单数据的抽取范围。
+reviews_without_order,PASS,0,WARN,评价记录无法关联订单。,不将孤立评价纳入订单满意度分析。
+negative_item_price,PASS,0,ERROR,商品价格为负数。,确认是否为退款；在没有退款字段时不得直接冲减成交额。
+negative_freight_value,PASS,0,ERROR,运费为负数。,检查源数据及运费补贴口径。
+negative_payment_value,PASS,0,ERROR,支付金额为负数。,确认退款与支付记录口径。
+invalid_review_score,PASS,0,ERROR,评分不在 1 至 5 分范围内。,隔离异常记录并回查源数据。
+approval_before_purchase,PASS,0,WARN,订单审批时间早于下单时间。,作为时间异常保留在质量报告，不用于时长分析。
+carrier_before_purchase,WARN,166,WARN,交给承运商的时间早于下单时间。,作为时间异常保留在质量报告，不用于时长分析。
+delivery_before_carrier,WARN,23,WARN,顾客收货时间早于交给承运商的时间。,作为时间异常保留在质量报告，不用于履约分析。
+delivery_before_purchase,PASS,0,ERROR,送达时间早于下单时间。,从配送时长统计中排除并回查源数据。
+duplicate_order_model_key,PASS,0,ERROR,订单分析宽表不是一单一行。,检查一对多表是否先按 order_id 聚合。
+missing_customer_unique_id,PASS,0,ERROR,订单缺少跨订单稳定的顾客标识。,不将缺失记录纳入复购、RFM 和同期群分析。
+boundary_months,INFO,0,INFO,样本首月 2016-09、末月 2018-10 可能不是完整自然月。,核心趋势比较限定为 2017-01 至 2018-08。

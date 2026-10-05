@@ -1,0 +1,176 @@
+// Create a dedicated measures table in Power BI, then add these measures.
+// Imported table names should be: powerbi_orders, powerbi_order_items,
+// powerbi_customers, monthly_metrics, cohort_retention_tidy.
+
+Total Orders =
+DISTINCTCOUNT ( powerbi_orders[order_id] )
+
+Delivered Orders =
+CALCULATE (
+    DISTINCTCOUNT ( powerbi_orders[order_id] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" )
+)
+
+Delivered GMV =
+CALCULATE (
+    SUM ( powerbi_orders[item_revenue] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" )
+)
+
+Delivered Freight =
+CALCULATE (
+    SUM ( powerbi_orders[freight_value] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" )
+)
+
+Average Order Value =
+DIVIDE ( [Delivered GMV], [Delivered Orders] )
+
+Purchasing Customers =
+CALCULATE (
+    DISTINCTCOUNT ( powerbi_orders[customer_unique_id] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" )
+)
+
+Repeat Customers =
+VAR CustomerOrders =
+    ADDCOLUMNS (
+        VALUES ( powerbi_orders[customer_unique_id] ),
+        "@DeliveredOrders",
+            CALCULATE (
+                DISTINCTCOUNT ( powerbi_orders[order_id] ),
+                KEEPFILTERS ( powerbi_orders[order_status] = "delivered" )
+            )
+    )
+RETURN
+COUNTROWS (
+    FILTER ( CustomerOrders, [@DeliveredOrders] >= 2 )
+)
+
+Repeat Customer Rate =
+DIVIDE ( [Repeat Customers], [Purchasing Customers] )
+
+Cancellation Rate =
+DIVIDE (
+    CALCULATE (
+        DISTINCTCOUNT ( powerbi_orders[order_id] ),
+        powerbi_orders[order_status] = "canceled"
+    ),
+    [Total Orders]
+)
+
+On-time Delivered Orders =
+CALCULATE (
+    DISTINCTCOUNT ( powerbi_orders[order_id] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" ),
+    NOT ISBLANK ( powerbi_orders[is_late] ),
+    powerbi_orders[is_late] = FALSE ()
+)
+
+Known Delivery Orders =
+CALCULATE (
+    DISTINCTCOUNT ( powerbi_orders[order_id] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" ),
+    NOT ISBLANK ( powerbi_orders[is_late] )
+)
+
+On-time Delivery Rate =
+DIVIDE ( [On-time Delivered Orders], [Known Delivery Orders] )
+
+Late Delivered Orders =
+CALCULATE (
+    DISTINCTCOUNT ( powerbi_orders[order_id] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" ),
+    powerbi_orders[is_late] = TRUE ()
+)
+
+Late Delivery Rate =
+DIVIDE ( [Late Delivered Orders], [Known Delivery Orders] )
+
+Average Delivery Days =
+CALCULATE (
+    AVERAGE ( powerbi_orders[delivery_days] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" )
+)
+
+Average Review Score =
+CALCULATE (
+    AVERAGE ( powerbi_orders[review_score] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" )
+)
+
+Low-review Orders =
+CALCULATE (
+    DISTINCTCOUNT ( powerbi_orders[order_id] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" ),
+    NOT ISBLANK ( powerbi_orders[review_score] ),
+    powerbi_orders[review_score] <= 2
+)
+
+Rated Delivered Orders =
+CALCULATE (
+    DISTINCTCOUNT ( powerbi_orders[order_id] ),
+    KEEPFILTERS ( powerbi_orders[order_status] = "delivered" ),
+    NOT ISBLANK ( powerbi_orders[review_score] )
+)
+
+Low-review Rate =
+DIVIDE ( [Low-review Orders], [Rated Delivered Orders] )
+
+GMV MoM % =
+VAR MonthStart = DATE ( YEAR ( MAX ( 'Date'[Date] ) ), MONTH ( MAX ( 'Date'[Date] ) ), 1 )
+VAR PreviousMonthGMV = CALCULATE ( [Delivered GMV], DATEADD ( 'Date'[Date], -1, MONTH ) )
+RETURN
+    IF (
+        HASONEVALUE ( 'Date'[Year Month] )
+            && MonthStart >= DATE ( 2017, 2, 1 )
+            && MonthStart <= DATE ( 2018, 8, 1 ),
+        DIVIDE ( [Delivered GMV] - PreviousMonthGMV, PreviousMonthGMV )
+    )
+
+Eligible 90D Customers =
+CALCULATE (
+    COUNTROWS ( powerbi_customers ),
+    powerbi_customers[eligible_90d] = TRUE ()
+)
+
+90D Repeat Customers =
+CALCULATE (
+    COUNTROWS ( powerbi_customers ),
+    powerbi_customers[eligible_90d] = TRUE (),
+    powerbi_customers[repeat_within_90d] = TRUE ()
+)
+
+90D Repeat Rate =
+DIVIDE ( [90D Repeat Customers], [Eligible 90D Customers] )
+
+Item GMV =
+CALCULATE (
+    SUM ( powerbi_order_items[price] ),
+    KEEPFILTERS ( powerbi_order_items[order_status] = "delivered" )
+)
+
+Freight to GMV Rate =
+DIVIDE ( [Delivered Freight], [Delivered GMV] )
+
+RFM Customer Value =
+SUM ( powerbi_customers[monetary] )
+
+// The following two definitions are calculated columns, not measures.
+// Create each one with Modeling -> New column when building the report.
+
+Delivery Status Label =
+SWITCH (
+    TRUE (),
+    ISBLANK ( powerbi_orders[is_late] ), "配送信息缺失",
+    powerbi_orders[is_late] = TRUE (), "延迟",
+    "准时"
+)
+
+Seller Late Risk Band =
+SWITCH (
+    TRUE (),
+    seller_scorecard[late_delivery_rate] >= 0.15, "高延迟（≥15%）",
+    seller_scorecard[late_delivery_rate] >= 0.08, "中延迟（8%–15%）",
+    "低延迟（<8%）"
+)

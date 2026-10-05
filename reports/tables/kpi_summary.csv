@@ -1,0 +1,15 @@
+metric,metric_cn,value,unit,definition
+total_orders,总订单数,99441.0,orders,全部状态的唯一订单数
+delivered_orders,成交订单数,96478.0,orders,状态为 delivered 的订单数
+delivered_gmv,成交额,13221498.11,BRL,成交订单商品价格合计，不含运费
+delivered_freight,成交运费,2202965.54,BRL,成交订单运费合计
+average_order_value,客单价,137.0415857501192,BRL/order,成交额除以成交订单数
+active_customers,购买顾客数,93358.0,customers,至少一笔成交订单的顾客数
+repeat_customers,复购顾客数,2801.0,customers,至少两笔成交订单的顾客数
+repeat_customer_rate,复购率,0.03000278497825575,rate,复购顾客数除以购买顾客数
+cancellation_rate,取消率,0.006285133898492574,rate,canceled 订单占全部订单比例
+unavailable_rate,缺货不可用率,0.006124234470691163,rate,unavailable 订单占全部订单比例
+on_time_delivery_rate,准时送达率,0.9188763346117964,rate,实际送达不晚于预计日期的比例
+average_delivery_days,平均履约天数,12.558217098051975,days,下单到实际送达的平均天数
+average_review_score,平均评分,4.156186520855942,score,成交订单平均评价分数
+low_review_rate,低评分率,0.1276922113698973,rate,评价不高于 2 分的成交订单比例

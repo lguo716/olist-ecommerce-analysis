@@ -1,0 +1,362 @@
+{
+  "platform": [
+    {
+      "[orders]": 99441,
+      "[delivered]": 96478,
+      "[gmv]": 13221498.109999346,
+      "[aov]": 137.0415857501124,
+      "[customers]": 93358,
+      "[repeat]": 2801,
+      "[repeat_rate]": 0.03000278497825575,
+      "[on_time]": 88644,
+      "[known_delivery]": 96470,
+      "[on_time_rate]": 0.9188763346117964,
+      "[low_reviews]": 12237,
+      "[rated]": 95832,
+      "[low_rate]": 0.1276922113698973,
+      "[eligible90]": 75563,
+      "[repeat90]": 1718,
+      "[repeat90rate]": 0.022735995129891613
+    }
+  ],
+  "delivery": [
+    {
+      "powerbi_orders[Delivery Status Label]": "准时",
+      "[orders]": 88163,
+      "[score]": 4.294292012144172,
+      "[low_rate]": 0.09187527647652644
+    },
+    {
+      "powerbi_orders[Delivery Status Label]": "延迟",
+      "[orders]": 7661,
+      "[score]": 2.566505678109907,
+      "[low_rate]": 0.5398773006134969
+    }
+  ],
+  "core": [
+    {
+      "[gmv]": 13181027.129999354,
+      "[delivered]": 96211,
+      "[repeat]": 2789,
+      "[repeat_rate]": 0.02995574841037979
+    }
+  ],
+  "model": [
+    {
+      "[items]": 112650,
+      "[customer_rows]": 93358,
+      "[item_gmv]": 13221498.109998897,
+      "[rfm_value]": 13221498.109999035
+    }
+  ],
+  "ba_core": [
+    {
+      "[gmv]": 493339.25999999995,
+      "[delivered]": 3253,
+      "[customers]": 3155,
+      "[repeat]": 88
+    }
+  ],
+  "november": [
+    {
+      "[gmv]": 987765.3699999956,
+      "[delivered]": 7289
+    }
+  ],
+  "canceled": [
+    {
+      "[orders]": 625,
+      "[delivered]": 0,
+      "[gmv]": 0.0,
+      "[repeat]": 0
+    }
+  ],
+  "cohorts": [
+    {
+      "[groups]": 23,
+      "[m0_customers]": 93358,
+      "[m0_min]": 1.0,
+      "[m1_active]": 421,
+      "[m1_base]": 87214,
+      "[m2_active]": 273,
+      "[m2_base]": 81265
+    }
+  ],
+  "mom": [
+    {
+      "[jan]": null,
+      "[sep]": null,
+      "[total]": null
+    }
+  ],
+  "checks": [
+    {
+      "check": "platform.repeat",
+      "actual": 2801,
+      "expected": 2801,
+      "passed": true
+    },
+    {
+      "check": "platform.known_delivery",
+      "actual": 96470,
+      "expected": 96470,
+      "passed": true
+    },
+    {
+      "check": "platform.on_time",
+      "actual": 88644,
+      "expected": 88644,
+      "passed": true
+    },
+    {
+      "check": "platform.gmv",
+      "actual": 13221498.109999346,
+      "expected": 13221498.11,
+      "passed": true
+    },
+    {
+      "check": "platform.low_rate",
+      "actual": 0.1276922113698973,
+      "expected": 0.1276922113698973,
+      "passed": true
+    },
+    {
+      "check": "platform.repeat90",
+      "actual": 1718,
+      "expected": 1718,
+      "passed": true
+    },
+    {
+      "check": "platform.delivered",
+      "actual": 96478,
+      "expected": 96478,
+      "passed": true
+    },
+    {
+      "check": "platform.low_reviews",
+      "actual": 12237,
+      "expected": 12237,
+      "passed": true
+    },
+    {
+      "check": "platform.eligible90",
+      "actual": 75563,
+      "expected": 75563,
+      "passed": true
+    },
+    {
+      "check": "platform.orders",
+      "actual": 99441,
+      "expected": 99441,
+      "passed": true
+    },
+    {
+      "check": "platform.customers",
+      "actual": 93358,
+      "expected": 93358,
+      "passed": true
+    },
+    {
+      "check": "platform.repeat90rate",
+      "actual": 0.022735995129891613,
+      "expected": 0.022735995129891613,
+      "passed": true
+    },
+    {
+      "check": "platform.aov",
+      "actual": 137.0415857501124,
+      "expected": 137.0415857501192,
+      "passed": true
+    },
+    {
+      "check": "platform.repeat_rate",
+      "actual": 0.03000278497825575,
+      "expected": 0.03000278497825575,
+      "passed": true
+    },
+    {
+      "check": "platform.on_time_rate",
+      "actual": 0.9188763346117964,
+      "expected": 0.9188763346117964,
+      "passed": true
+    },
+    {
+      "check": "platform.rated",
+      "actual": 95832,
+      "expected": 95832,
+      "passed": true
+    },
+    {
+      "check": "model.items",
+      "actual": 112650,
+      "expected": 112650,
+      "passed": true
+    },
+    {
+      "check": "model.item_gmv",
+      "actual": 13221498.109998897,
+      "expected": 13221498.11,
+      "passed": true
+    },
+    {
+      "check": "model.customer_rows",
+      "actual": 93358,
+      "expected": 93358,
+      "passed": true
+    },
+    {
+      "check": "model.rfm_value",
+      "actual": 13221498.109999035,
+      "expected": 13221498.11,
+      "passed": true
+    },
+    {
+      "check": "core.repeat",
+      "actual": 2789,
+      "expected": 2789,
+      "passed": true
+    },
+    {
+      "check": "core.gmv",
+      "actual": 13181027.129999354,
+      "expected": 13181027.13,
+      "passed": true
+    },
+    {
+      "check": "core.delivered",
+      "actual": 96211,
+      "expected": 96211,
+      "passed": true
+    },
+    {
+      "check": "ba_core.customers",
+      "actual": 3155,
+      "expected": 3155,
+      "passed": true
+    },
+    {
+      "check": "ba_core.gmv",
+      "actual": 493339.25999999995,
+      "expected": 493339.26,
+      "passed": true
+    },
+    {
+      "check": "ba_core.repeat",
+      "actual": 88,
+      "expected": 88,
+      "passed": true
+    },
+    {
+      "check": "ba_core.delivered",
+      "actual": 3253,
+      "expected": 3253,
+      "passed": true
+    },
+    {
+      "check": "november.gmv",
+      "actual": 987765.3699999956,
+      "expected": 987765.37,
+      "passed": true
+    },
+    {
+      "check": "november.delivered",
+      "actual": 7289,
+      "expected": 7289,
+      "passed": true
+    },
+    {
+      "check": "canceled.orders",
+      "actual": 625,
+      "expected": 625,
+      "passed": true
+    },
+    {
+      "check": "canceled.gmv",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "canceled.repeat",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "canceled.delivered",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "cohorts.m2_base",
+      "actual": 81265,
+      "expected": 81265,
+      "passed": true
+    },
+    {
+      "check": "cohorts.groups",
+      "actual": 23,
+      "expected": 23,
+      "passed": true
+    },
+    {
+      "check": "cohorts.m0_min",
+      "actual": 1.0,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "cohorts.m1_base",
+      "actual": 87214,
+      "expected": 87214,
+      "passed": true
+    },
+    {
+      "check": "cohorts.m0_customers",
+      "actual": 93358,
+      "expected": 93358,
+      "passed": true
+    },
+    {
+      "check": "cohorts.m2_active",
+      "actual": 273,
+      "expected": 273,
+      "passed": true
+    },
+    {
+      "check": "cohorts.m1_active",
+      "actual": 421,
+      "expected": 421,
+      "passed": true
+    },
+    {
+      "check": "mom.jan",
+      "actual": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "check": "mom.sep",
+      "actual": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "check": "mom.total",
+      "actual": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "check": "delivery.准时",
+      "passed": true
+    },
+    {
+      "check": "delivery.延迟",
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "checked_at": "2026-10-05T16:55:35"
+}
