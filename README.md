@@ -32,7 +32,7 @@
 - [可编辑 Power BI 源项目](powerbi/Olist.pbip)：与相邻的 `Olist.Report` 和 `Olist.SemanticModel` 目录一起保留。
 - [项目验收记录与四页截图](reports/project_acceptance.md)：31项Python测试、41项输入检查、45项实际DAX核对全部通过。
 
-首页默认使用2017-01至2018-08完整月份，因此GMV显示 **13,181,027.13 BRL**；全数据窗口GMV为 **13,221,498.11 BRL**。全窗口核对需清除首页“完整月份”页面筛选，详细说明见完整流程文档。本次不修改简历或原始CSV。
+首页默认使用2017-01至2018-08完整月份，因此GMV显示 **13,181,027.13 BRL**；全数据窗口GMV为 **13,221,498.11 BRL**。全窗口核对需清除首页“完整月份”页面筛选，详细说明见完整流程文档。
 
 ## 学习入口
 
@@ -129,8 +129,7 @@ olist-ecommerce-analysis/
 │   ├── figures/             # 自动生成的图表
 │   ├── tables/              # 汇总结果
 │   ├── findings.md          # 自动生成的分析结论
-│   ├── project_acceptance.md # 最终验收与四页截图
-│   └── interview_guide.md   # 三分钟讲解与常见追问
+│   └── project_acceptance.md # 最终验收与四页截图
 ├── powerbi/
 │   ├── date_table.dax       # 日期表
 │   ├── measures.dax         # 核心度量值
@@ -168,12 +167,12 @@ powershell -ExecutionPolicy Bypass -File .\src\download_data.ps1
 
 PBIX包含已导入的匿名公开数据，可直接打开查看。重新刷新时，先生成CSV，再在Power Query中将11张输入表的本机路径调整为当前克隆目录。SQL模块使用MySQL 8，按`sql/`目录编号依次建表、导入CSV、检查数据并建立分析视图；Python自动化分析入口如上。
 
-上传范围：代码、SQL、文档、汇总结果、11张静态/看板截图、最终PBIX和可编辑PBIP源文件。原始CSV、行级派生CSV、虚拟环境、缓存、备份及简历描述文件不上传。数据来源与第三方声明见[NOTICE.md](NOTICE.md)。
+上传范围：代码、SQL、文档、汇总结果、11张静态/看板截图、最终PBIX和可编辑PBIP源文件。原始CSV、行级派生CSV、虚拟环境、缓存及备份不上传。数据来源与第三方声明见[NOTICE.md](NOTICE.md)。
 
 运行完成后：
 
 - `reports/findings.md`：主要业务结论与统计检验结果；
-- `reports/figures/`：作品集可使用的分析图；
+- `reports/figures/`：分析图与看板截图；
 - `reports/tables/`：核心汇总结果；
 - `data/processed/powerbi_*.csv`：可直接导入 Power BI 的数据表。
 - `powerbi/build_checklist.md`：从导入、关系到四页图表的精确搭建清单。
